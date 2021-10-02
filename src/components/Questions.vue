@@ -165,7 +165,7 @@ let questions = [
         },
         {
           text: "Agora que já decidimos o traje, que tal passarmos para a comida?",
-          text2: "Qual é aquela comida que de trás os melhores momentos? E depois de escolher, porque não sugerir o restaurante?"
+          text2: "Qual é aquela comida que te trás os melhores momentos? E depois de escolher, porque não sugerir o restaurante?"
         },
         {
           text: "Ok, traje e restaurante escolhidos, o que mais falta?",
