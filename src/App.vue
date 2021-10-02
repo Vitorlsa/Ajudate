@@ -1,15 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <LandingPage v-if="started == null" @startApp="StartedApp($event)" />
+  <Questions v-if="started" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LandingPage from './components/LandingPage.vue'
+import Questions from './components/Questions.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: { LandingPage, Questions },
+  data() {
+    return{
+      started: null
+    }
+  },
+  methods: {
+    StartedApp(started) {
+      this.started = started
+    }
   }
 }
 </script>
@@ -22,5 +31,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  height: 80vh;
+  width: 100%;
 }
 </style>
